@@ -1,0 +1,139 @@
+/* =================================================================================
+font start 
+==================================================================================*/
+@font-face {
+  font-family: "Figtree-VariableFont_wght", sans-serif;
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+/* =================================================================================
+font end
+==================================================================================*/
+
+/* =================================================================================
+univarsel setctor start
+==================================================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Figtree-VariableFont_wght", sans-serif;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+:root {
+  --primary-yellow: hsl(47, 88%, 63%);
+
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+p {
+  font-size: 16px;
+}
+/* =================================================================================
+univarsel sector end
+==================================================================================*/
+
+/* =================================================================================
+blog-preview-card start
+==================================================================================*/
+body {
+  background: var(--primary-yellow);
+  padding: 100px 0;
+}
+.container {
+  max-width: 1440px;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-preview-card {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid black;
+  box-shadow: 10px 10px black;
+  background: var(--white);
+}
+.blog-preview-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.blog-preview-card a {
+  margin: 20px 0;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: 800;
+  border-radius: 10px;
+  background: var(--primary-yellow);
+  color: var(--black);
+  display: inline-block;
+}
+.blog-preview-card p {
+  font-weight: bold;
+}
+.blog-preview-card h1 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 15px 0;
+  cursor: pointer;
+}
+.blog-preview-card h1:hover {
+  color: var(--primary-yellow);
+}
+.blog-preview-card .description {
+  color: var(--grey);
+  line-height: 1.5;
+}
+.blog-preview-card .avater {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 15px;
+}
+.blog-preview-card .avater img {
+  width: 50px;
+  height: 50px;
+}
+.blog-preview-card .avater h5 {
+  font-weight: 800;
+}
+/* =================================================================================
+blog-preview-card end
+==================================================================================*/
+
+/* =================================================================================
+Frontend Mentor start
+==================================================================================*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: -3%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* =================================================================================
+Frontend Mentor end
+==================================================================================*/
+
+/* =================================================================================
+responsive media quary start
+==================================================================================*/
+@media only screen and (max-width: 375px) {
+  body {
+    padding: 50px 0;
+    padding: 100px 0;
+  }
+  .blog-preview-card {
+    width: 90%;
+  }
+  .attribution {
+    margin-top: 25%;
+  }
+}
+/* =================================================================================
+responsive media quary end
+==================================================================================*/
